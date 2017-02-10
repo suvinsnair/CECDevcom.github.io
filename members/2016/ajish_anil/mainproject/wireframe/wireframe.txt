@@ -1,0 +1,61 @@
+What is wireframing?
+
+Short Answer:
+
+Wireframing is a way to design a website service at the structural level. A wireframe is commonly used to lay out content and
+functionality on a page which takes into account user needs and user journeys. Wireframes are used early in the development
+process to establish the basic structure of a page before visual design and content is added.
+
+
+
+Long Answer:
+
+A wireframe is a layout of a web page that demonstrates what interface elements will exist on key pages. 
+It is a critical part of the interaction design process.
+
+The aim of a wireframe is to provide a visual understanding of a page early in a project to get stakeholder and project
+team approval before the creative phase gets under way. Wireframes can also be used to create the global and secondary
+navigation to ensure the terminology and structure used for the site meets user expectations.
+
+A wireframe is much easier to adapt than a concept design
+
+It is quicker and cheaper to review and amend the structure of the key pages in a wireframe format. Iterating the development 
+of the wireframes to a final version will provide the client and the design team confidence that the page is catering 
+to user needs whilst fulfilling the key business and project objectives.
+
+
+Wireframing takes place early in the project lifecycle
+
+Often used to complete the User Centred Design process, wireframes are also used at the beginning of the design phase.
+A prototype usability test will often be a test of the wireframe pages to provide user feedback prior to the creative process.
+
+
+Wireframes can be simply hand drawn, but are often put together using software like Microsoft’s Visio, to provide an on-screen
+delivery. However, if the wireframes are going to be used for a prototype usability test, it is best to create them in HTML.
+There is some good software that allows you to do this easily including Axure RP or Omnigraffle (Mac only).
+
+
+Advantages of Wireframing
+
+One of the great advantages of wireframing is that it provides an early visual that can be used to review with the client. Users
+can also review it as an early feedback mechanism for prototype usability tests. Not only are wireframes easier to amend than
+concept designs, once approved by the client and the users they provide confidence to the designer.
+
+
+From a practical perspective, the wireframes ensure the page content and functionality are positioned correctly based on user and
+business needs. And as the project moves forward they can be used as a good dialogue between members of the project team to agree
+on the project vision and scope.
+
+Disadvantages of Wireframing
+
+As the wireframes do not include any design, or account for technical implications, it is not always easy for the client to grasp
+the concept. The designer will also have to translate the wireframes into a design, so communication to support the wireframe is
+often needed to explain why page elements are positioned as they are. Also, when content is added, it might initially be too much
+to fit within the wireframe layout, so the designer and copywriter will need to work closely to make this fit.
+
+
+Conclusion
+
+Wireframes should be used early in a project to get user and client approval on the layout of key pages and the navigation. This
+will provide the project team, specifically the designers, confidence in moving forward. Wireframes will also save considerable
+time and money in the testing and amends phase later in the project.
