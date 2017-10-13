@@ -1,0 +1,34 @@
+div{
+
+}
+#Name{
+	font-family: Calibri, sans-serif;
+	font-size: 2em;
+	margin-left: 65px;
+}
+
+#Details{
+	font-family: Calibri Light;
+	line-height: .5;
+	margin-top: -20px;
+	margin-left: 70px;
+}
+#Places{
+	font-family: Calibri Light;
+	margin-left: 70px;
+}
+#SocialMedia{
+	display: inline;
+	margin-top: 30px;
+	margin-left: 70px;
+	text-decoration: none;
+}
+img{
+	
+	position: fixed;
+	top: 80px;
+	right: 200px;
+	border-radius: 50%;
+	width: 25%;
+	height: 45%;
+}

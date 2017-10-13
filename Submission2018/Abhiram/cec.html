@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>College of Engineering Chengannur</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: #1e85f4;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #1e85f4;
+      font-size: 50px;
+  }
+  .logo {
+      color: #1e85f4;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #1e85f4;
+  }
+  .carousel-indicators li {
+      border-color: #1e85f4;
+  }
+  .carousel-indicators li.active {
+      background-color: #1e85f4;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #1e85f4; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #1e85f4;
+      background-color: #fff !important;
+      color: #1e85f4;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #1e85f4 !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #1e85f4;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #1e85f4;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.4 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #1e85f4 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #1e85f4;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"><imgsrc="images.jpg" class="img-rounded" alt="LOGO" width="20" height="20"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#admission">ADMISSIONS</a></li>
+        <li><a href="#department">DEPARTMENTS</a></li>
+        <li><a href="#placement">PLACEMENTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>COLLEGE OF ENGINEERING CHENGANNUR</h1> 
+  <p>Managed by IHRD</p>
+  <p>A Govt. of Kerala Undertaking</p>
+</div>
+<div id="home" class="container-fluid">
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+  
+
+  <div class="row">
+    <div class="col-sm-8">
+    <P>College of Engineering, Chengannur being located in Chengannur town, Alleppey district is a premier institute of engineering that has carved a niche for itself in the field of technical education in a very short span of time. Since its inception in 1993, under the aegis of IHRD, approved by AICTE and recognized by CUSAT, the college has made its presence felt in the technical horizon of the state.</P>
+<div id="admission" class="container-fluid">
+      <h2>ADMISSIONS</h2><br>
+      <P>In accordance with Chapter VIII of the Ordinance to establish Kerala Technological University (KTU), Government of Kerala vide GO (Ms) No. 93/2015/HEdn dated 11.03.2015 have made affiliation of all institutions which imparts education in Engineering and Technology in the State of Kerala with KTU as mandatory from the academic year 2015-16 onward.
+
+In view of this B.Tech and M.Tech programmes offered by this institution are now affiliated to Kerala Technological University (http://ktu.edu.in/).</P><br>
+
+<H2>UG Programme</h2>
+
+  Admission to UG programs except in NRI seats is on the basis of the All Kerala Common Entrance Examination, conducted by the Commissioner for Entrance Examinations (CEE), Govt. of Kerala. The criteria for B.Tech degree admission is prescribed by the CEE, Govt. of Kerala and concerned university, and is issued every year by Govt. of Kerala through common prospectus for admission to professional degree courses. The entrance examinations are conducted usually in the month of April .
+Visit http://cee-kerala.org/ for more details.
+
+<h2>ADMISSION TO NRI SEATS 2017 - 2018</h2>
+Last Rank Details in previous years :: Read More..
+
+Annual Intake for Full Time U G Courses are
+B.Tech Degree in Computer Science and Engineering	120 Seats
+B.Tech Degree in Electronics and Communication Engineering	120 Seats
+B.Tech Degree in Electrical & Electronics Engineering	120 Seats
+B.Tech Degree in Electronics and Instrumentation Engineering	60 Seats
+In addition, 5% of students are admitted in each discipline under Fee Waiver Scheme (FWS) with tuition fee concession. 
+The fee structure of the programme is decided by the Govt. of Kerala every year before admission.  Once admitted, the fee structure of a student remains the same throughout the period of his/her study provided the student finishes the coursework within a duration of 8 consecutive semesters.  50% of seats are designated as free-ship seats for which fee at lower rate is collected and 35% is designated as full fee seats for which fee as proposed by the Fee Regulatory Committee is charged, with concession if any, approved by Government of Kerala. The remaining 15% seats are filled under NRI quota based on their marks at plus 2 level. Moreover candidates with a relevant Diploma degree can get a Lateral entry (LT) to the second year engineering, under Lateral Entry Scheme as per Govt. directives. Separate Entrance Examination is conducted for such candidates.
+</H4>
+      <br>
+</div>
+<div id="department" class="container-fluid text-center">
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-education logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>DEPARTMENTS</h2><br>
+      
+       <div class="media-left">
+         <img src="img_avatar1.png" class="media-object" style="width:60px">
+          ELECTRONICS AND COMMUNICATION ENGINEERING</h4></div> <br>
+       <div class="media-left">
+         <img src="img_avatar1.png" class="media-object" style="width:60px">
+          COMPUTER SCIENCE ENGINEERING</h4></div> <br>
+       <div class="media-left">
+         <img src="img_avatar1.png" class="media-object" style="width:60px">
+          ELECTRICAL ENGINEERING</h4></div> <br>
+       <div class="media-left">
+         <img src="img_avatar1.png" class="media-object" style="width:60px">
+          ELECTRONICS AND INSTRUMENTATION</h4></div> <br>
+    </div>
+  </div>
+</div>
+<div id="placement" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+    <h2> Placements</h2>
+     <p>The Training and Placement Cell, (TPC) of the College of Engineering, Chengannur is a body of active students, guided by Staff-in-Charge. Student members are specially selected to carry out the responsible working of the cell. The TPC dedicates itself to help students develop their personalities and establish their careers.</p>
+     </div>
+   </div>
+</div>
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chengannur, Alappuzha</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91-479- 2165706, 2454125, 2456046, 2451424</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> principal@ceconline.edu</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br>
+ <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-download-alt logo-small"></span>
+      <h4>Downloads</h4>
+    </div>
+    <div class="col-sm-4">
+      <span class="	glyphicon glyphicon-envelope logo-small"></span>
+      <h4>CEC Mail</h4>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-picture logo-small"></span>
+      <h4>Gallery</h4>
+    </div>
+   </div>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-paperclip logo-small"></span>
+      <h4>Links</h4>
+     </div>
+    <div class="col-sm-4">
+      <span class="	glyphicon glyphicon-bell logo-small"></span>
+      <h4>Notification</h4>
+     </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-file logo-small"></span>
+      <h4>Results</h4>
+     </div>
+   </div>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  </footer>
+
+<script>
+$(document).ready(function(){
+  
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    
+    if (this.hash !== "") {
+      
+      event.preventDefault();
+
+      
+      var hash = this.hash;
+
+      
+      
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        
+        window.location.hash = hash;
+      });
+    } 
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+@media only screen and (max-width: 900px) 
+{
+	.web
+	{
+		display:none;
+	}		
+	.mobile
+	{
+		margin-top: 7px;
+		display:block !important;
+	}
+	.butt
+	{
+		width: 80px;
+	}
+	.dropdown_content
+	{
+		margin-top: 12px;
+	}
+	.block_2
+	{
+		display: none;
+	}
+	.block_1
+	{
+		width: 100%!important;
+	}
+}
+
+@media only screen and (max-width: 750px) 
+{
+	.web
+	{
+		display:none;
+	}		
+	.mobile
+	{
+		margin-top: 7px;
+		display:block !important;
+	}
+		.butt
+	{
+		width: 80px;
+	}
+	.dropdown_content
+	{
+		margin-top: 12px;
+	}
+	.post
+	{
+		height: 280px!important;
+	}
+		.post_head
+	{
+		/*font-size: 20px!important;*/
+		margin-top: 200px!important;
+		float: none!important;
+	}
+	.post_sub
+	{
+		/*font-size: 15px!important;*/
+		margin-top: -30px!important;
+		margin-left: 15px!important;
+	}
+	.post_footer
+	{
+		height: 280px!important;
+	}
+
+}
+
+@media only screen and (max-width: 500px) 
+{
+		.head
+	{
+		height:50px;
+		width: 175px;
+		margin-left: 15px;
+	}
+	.web
+	{
+		display:none;
+	}		
+	.mobile
+	{
+		margin-top: 7px;
+		display:block !important;
+	}
+	.butt
+	{
+		width: 60px;
+	}
+	.post
+	{
+		height: 260px!important;
+	}
+		.post_head
+	{
+		font-size: 20px!important;
+		margin-top: 200px!important;
+		float: none!important;
+	}
+	.post_sub
+	{
+		font-size: 15px!important;
+		margin-top: -20px!important;
+		margin-left: 15px!important;
+	}
+	.post_footer
+	{
+		height: 260px!important;
+	}
+		.block_1
+	{
+			margin-top: 16px!important;
+	}
+	.post_content
+	{
+		padding-top:100px!important;
+		padding-left: 20px !important;
+	}
+}
+@media only screen and (max-width: 350px) 
+{
+	.web
+	{
+		display:none;
+	}		
+	.mobile
+	{
+		margin-top: 7px;
+		display:block !important;
+	}
+	.butt
+	{
+		width: 50px;
+	}
+	.head
+	{
+		height:50px;
+		width: 165px;
+		margin-left:20px;
+	}
+		.post
+	{
+		height: 180px!important;
+	}
+		.post_head
+	{
+		font-size: 15px!important;
+		margin-top: 140px!important;
+		float: none!important;
+	}
+	.post_sub
+	{
+		font-size: 10px!important;
+		margin-top: -15px!important;
+		margin-left: 15px!important;
+	}
+	.post_footer
+	{
+		height: 180px!important;
+	}
+
+}

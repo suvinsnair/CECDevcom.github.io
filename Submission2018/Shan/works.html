@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shan Eapen Koshy</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <a class="menu" href=""><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 52 52" style="enable-background:new 0 0 52 52;" xml:space="preserve">
+<g>
+	<circle cx="16" cy="17" r="2.5"/>
+</g>
+<g>
+	<circle cx="26" cy="17" r="2.5"/>
+</g>
+<g>
+	<circle cx="36" cy="17" r="2.5"/>
+</g>
+<g>
+	<circle cx="16" cy="26" r="2.5"/>
+</g>
+<g>
+	<circle cx="26" cy="26" r="2.5"/>
+</g>
+<g>
+	<circle cx="36" cy="26" r="2.5"/>
+</g>
+<g>
+	<circle cx="16" cy="35" r="2.5"/>
+</g>
+<g>
+	<circle cx="26" cy="35" r="2.5"/>
+</g>
+<g>
+	<circle cx="36" cy="35" r="2.5"/>
+</g>
+</svg>
+</a>
+
+    <div class="container" id="pjax-container">
+      <drawer>
+        <p>
+          Shan Eapen Koshy
+          <br />
+          <a data-pjax class="sublink" href="https://codegena.com//" target="_blank">Blog</a><a class="sublink" href="https://youtube.com/shaneapen/" target="_blank">YouTube</a><a class="sublink" href="https://www.twitter.com/shaneapen" target="_blank">Twitter</a>
+        </p>
+
+        <a data-pjax href="index.html"><btn class="btnabout">Home</btn></a>
+      </drawer>
+
+      <darkbg>
+        <lightbg>
+
+<abouthead>
+  <inner>
+    <p>My Works</p>
+  </inner>
+</abouthead>
+
+<introtxt>
+  <p>
+<center>
+    <ul>
+                    <li><a href="https://codegena.com/youtube-instant/" target="_blank">Youtube Instant</a></li><br>
+                          <li><a href="https://codegena.com/automatically-forward-your-gmail-to-multiple-users-for-free/" target="_blank">Gmail AutoForwarder</a></li><br>
+                          <li><a href="https://codegena.com/generator/Youtube-Embed-Code-Generator" target="_blank">Youtube Embed Code Generator</a></li><br>
+                          <li><a href="https://codegena.com/generator/background-image-generator" target="_blank">Pattern Generator</a><li><br>
+                          <li><a href="https://codegena.com/generator/multiple-url-opener" target="_blank">Multiple URL Opener</a><li>
+              </ul></center></p>
+</introtxt>
+
+
+
+        </lightbg>
+      </darkbg>
+
+    </div>
+
+    <script>
+      $(document).pjax('a[data-pjax]', '#pjax-container');
+
+      // Menu fade & scale
+      $('.menu').click(function(e){
+        e.preventDefault();
+        $('lightbg').toggleClass('shrink');
+        $('darkbg').toggleClass('bgheight');
+        $('drawer').toggleClass('reveal');
+        $('.menu svg circle').toggleClass('menu-light');
+        $('.back').fadeToggle('fast');
+        $('lightbg').click(function(){
+          if ($(this).hasClass('shrink')) {
+            $('lightbg').toggleClass('shrink');
+            $('darkbg').toggleClass('bgheight');
+            $('drawer').toggleClass('reveal');
+            $('.menu svg circle').toggleClass('menu-light');
+            $('.back').fadeToggle('fast');
+          }
+          else {
+            e.preventDefault();
+          };
+        });
+      });
+
+      // Flickity init
+      $(document).on('pjax:send', function() {
+        $('carousel').flickity({
+          // options
+          lazyLoad: 1,
+          initialIndex: 1,
+          pageDots: false,
+          cellAlign: 'center',
+          contain: true
+        });
+      });
+
+      // Project header image
+      $(document).on('pjax:end', function() {
+        $('bgimg').addClass('fadein');
+      });
+
+
+    </script>
+  </body>
+</html>

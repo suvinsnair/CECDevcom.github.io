@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shan Eapen Koshy</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/app.css">
+</head>
+  <body>
+    <a class="menu" href=""><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 52 52" style="enable-background:new 0 0 52 52;" xml:space="preserve">
+<g>
+	<circle cx="16" cy="17" r="2.5"/>
+</g>
+<g>
+	<circle cx="26" cy="17" r="2.5"/>
+</g>
+<g>
+	<circle cx="36" cy="17" r="2.5"/>
+</g>
+<g>
+	<circle cx="16" cy="26" r="2.5"/>
+</g>
+<g>
+	<circle cx="26" cy="26" r="2.5"/>
+</g>
+<g>
+	<circle cx="36" cy="26" r="2.5"/>
+</g>
+<g>
+	<circle cx="16" cy="35" r="2.5"/>
+</g>
+<g>
+	<circle cx="26" cy="35" r="2.5"/>
+</g>
+<g>
+	<circle cx="36" cy="35" r="2.5"/>
+</g>
+</svg>
+</a>
+
+    <div class="container" id="pjax-container">
+      <drawer>
+        <p>
+          Shan Eapen Koshy
+          <br />
+          <a data-pjax class="sublink" href="https://codegena.com//" target="_blank">Blog</a><a class="sublink" href="https://youtube.com/shaneapen/" target="_blank">YouTube</a><a class="sublink" href="https://www.twitter.com/shaneapen" target="_blank">Twitter</a>
+        </p>
+
+        <a data-pjax href="index.html"><btn class="btnabout">Home</btn></a>
+      </drawer>
+
+      <darkbg>
+        <lightbg>
+          <a data-pjax class="back" href="index.html"><img src="https://simon.works/images/back.svg" /></a>
+
+
+<introtxt style="height: 100vh;">
+  <p><br><br><br>
+    Hi,<br> I am Shan Eapen Koshy, a tech enthusiast. I started my tech journey with a youtube channel and a blog when I was in 9th grade. The channel now has over 6k subscribers with over 2 million channel views. <br>
+Today, I am more focussed on creating web applications and native apps. <br><br>
+    Talk to me at <a href="mailto:shaneapen@codegena.com">shaneapen@codegena.com</a>
+  </p>
+</introtxt>
+
+        </lightbg>
+      </darkbg>
+
+    </div>
+
+    <script>
+      $(document).pjax('a[data-pjax]', '#pjax-container');
+
+      // Menu fade & scale
+      $('.menu').click(function(e){
+        e.preventDefault();
+        $('lightbg').toggleClass('shrink');
+        $('darkbg').toggleClass('bgheight');
+        $('drawer').toggleClass('reveal');
+        $('.menu svg circle').toggleClass('menu-light');
+        $('.back').fadeToggle('fast');
+        $('lightbg').click(function(){
+          if ($(this).hasClass('shrink')) {
+            $('lightbg').toggleClass('shrink');
+            $('darkbg').toggleClass('bgheight');
+            $('drawer').toggleClass('reveal');
+            $('.menu svg circle').toggleClass('menu-light');
+            $('.back').fadeToggle('fast');
+          }
+          else {
+            e.preventDefault();
+          };
+        });
+      });
+
+      // Flickity init
+      $(document).on('pjax:send', function() {
+        $('carousel').flickity({
+          // options
+          lazyLoad: 1,
+          initialIndex: 1,
+          pageDots: false,
+          cellAlign: 'center',
+          contain: true
+        });
+      });
+
+      // Project header image
+      $(document).on('pjax:end', function() {
+        $('bgimg').addClass('fadein');
+      });
+
+      // Google Analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-105313534-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>

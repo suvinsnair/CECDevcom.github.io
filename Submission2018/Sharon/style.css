@@ -1,0 +1,15 @@
+.head{
+color:brown;
+text-align:center;
+background-color:#EDE7D5;
+}
+body{
+border:8px solid brown;
+}
+table,th,td{
+border: 2px solid black;
+width:50%;
+}
+#container{
+height:"500px";
+}

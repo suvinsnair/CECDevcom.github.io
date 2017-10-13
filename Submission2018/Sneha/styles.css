@@ -1,0 +1,33 @@
+.wrap {
+    width: 100%;
+}
+
+.left {
+    float:left;
+    width: 5%;
+    background-color:Black;
+    height: 1200px;
+}
+
+.right {
+float: right;
+    background-color:white;
+    height: 800px;
+    width: 95%;
+}
+
+.blackbox{
+    color:white;
+    background-color: black;
+    width: 100%;
+    border: 25px black;
+    padding: 0.5px;
+    margin: 0px;
+}
+.whitebox{
+
+  width: 100%;
+  border: 25px black;
+  padding: 0.5px;
+  margin: 0px;
+}

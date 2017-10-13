@@ -1,0 +1,20 @@
+.sidepost
+{
+	height: 120px;
+	width: 100%;
+	background-color: #d81539;
+    border-top: 3px solid #fff;
+    margin-top: 15px;
+    margin-bottom: -15px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.sidepost:hover
+{
+	opacity: 1 ;
+}
+.sidepostimage
+{
+	height: 120px;
+	width: 100%;
+}
